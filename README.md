@@ -28,7 +28,7 @@ Wait until the offline status is ready before disconnecting from the network.
 
 Synesterra has three named layers:
 
-- **Synesterra** is the complete instrument and repository.
+- **Synesterra** is the complete instrument; this repository contains its web/PWA laboratory.
 - **Polyrhythmer** is the rhythm workspace: four fixed layer slots, presets, support subdivision, click synthesis, tempo, and transport.
 - **Resonara** is the harmony workspace: scale context, tonal drone, sparse common-step progression, voicing, filter, and stereo width.
 
@@ -93,6 +93,8 @@ Chrome can offer installation when its PWA criteria are met. On iOS, use Safari 
 
 ## Scope
 
-The repository contains the shared web/PWA client and is the intended home for future Capacitor adapters. A future backend, if justified by accounts, synchronization, subscriptions, or telemetry, remains a separate concern and must never sit on the real-time audio path.
+This repository, [`synesterra-web`](https://github.com/KornelSzyszka/synesterra-web), contains the web/PWA laboratory. The standalone Flutter/Dart Android and iOS app has its own repository, [`synesterra-mobile`](https://github.com/KornelSzyszka/synesterra-mobile). The mobile repository is private while its initial architecture and audio behavior are being established.
+
+A future backend, if justified by accounts, synchronization, subscriptions, or telemetry, remains a separate concern and must never sit on the real-time audio path.
 
 Planned mobile/product work still includes portable session import/export, a local library, performance workflows, controlled evolution, physical-device audio validation, and store delivery. Automated Chromium is not a substitute for those release gates.
